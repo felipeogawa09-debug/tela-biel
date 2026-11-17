@@ -1,569 +1,1058 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
-injectIntoGlobalHook(window);
-window.$RefreshReg$ = () => {};
-window.$RefreshSig$ = () => (type) => type;</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gabriel Farias · @bielzin.rj021</title>
+<meta name="description" content="Acesso exclusivo ao conteúdo de Gabriel Farias. Assinatura com liberação imediata via PIX." />
+<meta name="theme-color" content="#f9f9f7" />
+<meta property="og:title" content="Gabriel Farias · @bielzin.rj021" />
+<meta property="og:description" content="Acesso exclusivo. Liberação imediata após o PIX." />
+<meta property="og:image" content="https://base44.app/api/apps/6afbd389b49c0b89280fb7d3/files/mp/public/6afbd389b49c0b89280fb7d3/460fcca91_gabriel-farias-bloqueada.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1a1a1a; --ivory:#f9f9f7; --sand:#f2e9de; --stone:#e8e8e1;
+    --brand:#ff4d00; --peach:#f9a86a; --peach-soft:#ffd8b3; --peach-deep:#ffab80; --peach-wash:#ffe5de;
+    --head:'Instrument Serif',ui-serif,Georgia,serif;
+    --body:'DM Sans',ui-sans-serif,system-ui,-apple-system,sans-serif;
+    --shadow:0 1px 2px rgba(26,26,26,.04),0 12px 32px -18px rgba(26,26,26,.2);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  [hidden]{display:none !important}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{background:var(--ivory);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  button{font-family:inherit}
+  a{color:inherit}
+  img{display:block}
 
-    <script type="module" src="/@vite/client"></script>
+  .wrap{width:100%;max-width:600px;margin:0 auto;padding:0 16px}
+  main.wrap{padding-bottom:128px}
+  .page{width:100%;max-width:520px;margin:0 auto;padding:24px 16px 72px}
+  .page-title{font-family:var(--head);font-size:28px;line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+  .page-sub{margin-top:4px;font-size:13px;color:rgba(26,26,26,.5)}
+  .row-between{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .center{text-align:center}
+  .muted{color:rgba(26,26,26,.5)}
 
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Base44 APP</title>
-      <!-- Tailwind CSS CDN for visual editing -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/node_modules/@base44/vite-plugin/dist/injections/unhandled-errors-handlers.js" type="module"></script>
-    <script src="/node_modules/@base44/vite-plugin/dist/injections/sandbox-hmr-notifier.js" type="module"></script>
-    <script src="/node_modules/@base44/vite-plugin/dist/injections/navigation-notifier.js" type="module"></script>
-  <script>if (window.self !== window.top) window.parent.postMessage({ type: 'SANDBOX_DOCUMENT_START' }, '*');</script><script>
-    (function() {
-        var buffer = window.__base44_preview_native_failures;
-        if (!buffer || buffer.version !== 1 || !Array.isArray(buffer.entries)) {
-            buffer = { version: 1, entries: [], listenersInstalled: false };
-            window.__base44_preview_native_failures = buffer;
-        }
-        if (buffer.listenersInstalled) return;
-        function value(object, key) {
-            return object && typeof object[key] === 'string' ? object[key] : '';
-        }
-        function append(message) {
-            if (!message) return;
-            var normalizedMessage = String(message).slice(0, 5000);
-            for (var index = buffer.entries.length - 1; index >= 0; index--) {
-                var existing = buffer.entries[index];
-                if (existing && existing.level === 'error' && existing.message === normalizedMessage) {
-                    buffer.entries.splice(index, 1);
-                }
-            }
-            buffer.entries.push({
-                level: 'error',
-                message: normalizedMessage,
-                timestamp: Date.now()
-            });
-            if (buffer.entries.length > 100) {
-                buffer.entries.splice(0, buffer.entries.length - 100);
-            }
-        }
-        buffer.append = append;
-        function handleError(event) {
-            var target = event && event.target;
-            var tagName = value(target, 'tagName').toLowerCase() || 'window';
-            var isModule = tagName === 'script' && value(target, 'type').toLowerCase() === 'module';
-            var resourceType = isModule ? 'module' : tagName;
-            var url = value(target, 'src') || value(target, 'href') || value(event, 'filename');
-            var detail = value(event, 'message') || value(event && event.error, 'message');
-            var prefix = tagName === 'window' ? 'Native browser error' : 'Failed to load ' + resourceType;
-            append(prefix + (url ? ' ' + url : '') + (detail ? ': ' + detail : ''));
-        }
-        function rejectionReason(reason) {
-            if (typeof reason === 'string') return reason;
-            var message = value(reason, 'message');
-            if (message) return message;
-            try { return JSON.stringify(reason) || String(reason); }
-            catch (e) { return String(reason); }
-        }
-        function handleRejection(event) {
-            append('Unhandled promise rejection: ' + rejectionReason(event && event.reason));
-        }
-        function handleCspViolation(event) {
-            var blockedUri = value(event, 'blockedURI') || 'resource';
-            var directive = value(event, 'violatedDirective');
-            append('Content Security Policy blocked ' + blockedUri + (directive ? ' (' + directive + ')' : ''));
-        }
-        function overlayText(root, selector) {
-            var element = root && root.querySelector(selector);
-            return value(element, 'textContent').trim();
-        }
-        function captureViteOverlay(overlay) {
-            var root = overlay && overlay.shadowRoot;
-            var message = overlayText(root, '.message-body');
-            if (!message) return;
-            var plugin = overlayText(root, '.plugin');
-            var details = ['Vite build error: ' + (plugin ? plugin + ' ' : '') + message];
-            var file = overlayText(root, '.file');
-            var frame = overlayText(root, '.frame');
-            var stack = overlayText(root, '.stack');
-            if (file) details.push('File: ' + file);
-            if (frame) details.push(frame);
-            if (stack) details.push(stack);
-            append(details.join(String.fromCharCode(10)));
-        }
-        function captureViteOverlays(node) {
-            if (!node || node.nodeType !== 1) return;
-            if (node.matches && node.matches('vite-error-overlay')) captureViteOverlay(node);
-            if (!node.querySelectorAll) return;
-            var overlays = node.querySelectorAll('vite-error-overlay');
-            for (var index = 0; index < overlays.length; index++) captureViteOverlay(overlays[index]);
-        }
-        window.addEventListener('error', handleError, true);
-        window.addEventListener('unhandledrejection', handleRejection);
-        window.addEventListener('securitypolicyviolation', handleCspViolation);
-        if (typeof MutationObserver !== 'undefined' && document.documentElement) {
-            captureViteOverlays(document.documentElement);
-            new MutationObserver(function(records) {
-                for (var recordIndex = 0; recordIndex < records.length; recordIndex++) {
-                    var nodes = records[recordIndex].addedNodes;
-                    for (var nodeIndex = 0; nodeIndex < nodes.length; nodeIndex++) {
-                        captureViteOverlays(nodes[nodeIndex]);
-                    }
-                }
-            }).observe(document.documentElement, { childList: true, subtree: true });
-        }
-        buffer.listenersInstalled = true;
-    })();
-    </script><script data-preview-data-env-pin="true">
-    (function() {
-        var KEY = 'base44_data_env';
-        var APP_API_PATH = "/api/apps/6afbd389b49c0b89280fb7d3/";
-        var STORAGE_KEY = KEY + ':' + APP_API_PATH;
-        var API_ORIGINS = ["https://app.base44.com", "https://base44.app"].map(function(u) { return new URL(u).origin; });
-        var REQUEST_INIT_KEYS = [
-            'method', 'headers', 'credentials', 'mode', 'cache', 'redirect',
-            'referrer', 'referrerPolicy', 'integrity', 'keepalive', 'signal', 'priority',
-        ];
-        var env = new URLSearchParams(window.location.search).get(KEY);
-        try {
-            if (env === 'dev' || env === 'prod') sessionStorage.setItem(STORAGE_KEY, env);
-            else env = sessionStorage.getItem(STORAGE_KEY);
-        } catch (e) {}
-        if (env !== 'dev' && env !== 'prod') return;
-        function pin(url) {
-            try {
-                var u = new URL(url, window.location.href);
-                var sameOrigin = u.origin === window.location.origin;
-                if (!sameOrigin && API_ORIGINS.indexOf(u.origin) === -1) return url;
-                // The app's own server routes and TanStack server functions build
-                // their SDK client from this request, so they need the selection too.
-                var appServerPath = sameOrigin && (
-                    u.pathname.startsWith('/api/') || u.pathname.startsWith('/_serverFn/')
-                );
-                if (!appServerPath && !u.pathname.startsWith(APP_API_PATH)) return url;
-                // Privileged function/agent routes trust this app's Preview host,
-                // not a dev parameter sent to the generic SDK API origin.
-                if (u.origin !== window.location.origin && (
-                    u.pathname.startsWith(APP_API_PATH + 'functions/') ||
-                    u.pathname.startsWith(APP_API_PATH + 'agents/')
-                )) {
-                    u = new URL(u.pathname + u.search + u.hash, window.location.origin);
-                }
-                u.searchParams.set(KEY, env);
-                return u.toString();
-            } catch (e) { return url; }
-        }
-        var origFetch = window.fetch;
-        window.fetch = function(input, init) {
-            if (typeof input === 'string' || input instanceof URL) {
-                return origFetch.call(this, pin(String(input)), init);
-            }
-            if (!input || !input.url) return origFetch.call(this, input, init);
-            var pinned = pin(input.url);
-            if (pinned === input.url) return origFetch.call(this, input, init);
-            try {
-                input = new Request(input, init);
-                if (!input.keepalive || !input.body) {
-                    return origFetch.call(this, new Request(pinned, input));
-                }
-                // RequestInit exposes an existing body as a stream, which Fetch
-                // forbids with keepalive. Buffer only that case, after init overrides.
-                var self = this;
-                return input.blob().then(function(body) {
-                    var rebuilt = { body: body };
-                    REQUEST_INIT_KEYS.forEach(function(key) {
-                        if (input[key] !== undefined) rebuilt[key] = input[key];
-                    });
-                    return origFetch.call(self, new Request(pinned, rebuilt));
-                });
-            } catch (error) { return Promise.reject(error); }
-        };
-        var origOpen = XMLHttpRequest.prototype.open;
-        XMLHttpRequest.prototype.open = function(method, url) {
-            arguments[1] = pin(String(url));
-            return origOpen.apply(this, arguments);
-        };
-    })();
-    </script><script defer data-preview-inject="true" data-parent-origins="https://app.base44.com https://superagent.base44.com" data-app-id="6afbd389b49c0b89280fb7d3" data-preview-type="sandbox" data-rum-app-id="db50c921-10c3-4f12-bccb-950fa174b708" data-rum-client-token="pubfe8a4f2972b412b4556fd67e77f82cb4" data-dd-site="datadoghq.com" src="https://app.base44.com/builder-bridge.js?t=1794907267"></script><script>
-    (function() {
-        var IGNORE = { SCRIPT: 1, STYLE: 1, LINK: 1, META: 1, NOSCRIPT: 1, TEMPLATE: 1 };
-        const fire = () => window.parent.postMessage({ type: 'IFRAME_CONTENT_READY' }, '*');
-        function check() {
-            var body = document.body;
-            if (!body) return false;
-            for (var idx = 0; idx < body.children.length; idx++) {
-                if (!IGNORE[body.children[idx].tagName]) return true;
-            }
-            return false;
-        }
-        function start() {
-            if (check()) { fire(); return; }
-            var observer = new MutationObserver(function() {
-                if (check()) { fire(); observer.disconnect(); }
-            });
-            observer.observe(document.documentElement, { childList: true, subtree: true });
-        }
-        if (document.body) { start(); }
-        else { document.addEventListener('DOMContentLoaded', start, { once: true }); }
-    })();
-    </script><script>
-    (function() {
-        if (window.self === window.top) return;
-        var APP_ID = "6afbd389b49c0b89280fb7d3";
-        var PREVIEW_TYPE = "sandbox";
-        var on404 = false;
-        var booted = false;
-        function detect() { return !!document.querySelector('[data-source-location^="PageNotFound:"]'); }
-        function payload() { return { app_id: APP_ID, preview_type: PREVIEW_TYPE, url_path: window.location.pathname }; }
-        function tick() {
-            var now = detect();
-            if (now && !on404) {
-                on404 = true;
-                window.parent.postMessage({ type: 'PREVIEW_PAGE_NOT_FOUND', payload: payload() }, '*');
-            } else if (!now && (on404 || !booted)) {
-                // On first tick of a fresh document, emit a cleared signal even when
-                // not currently on a 404 — the parent may have latched is404=true from
-                // a previous document at the same URL (e.g. after an iframe reload).
-                on404 = false;
-                window.parent.postMessage({ type: 'PREVIEW_PAGE_NOT_FOUND_CLEARED', payload: payload() }, '*');
-            }
-            booted = true;
-        }
-        function start() {
-            tick();
-            new MutationObserver(tick).observe(document.body, { childList: true, subtree: true });
-        }
-        if (document.body) { start(); }
-        else { document.addEventListener('DOMContentLoaded', start, { once: true }); }
-    })();
-    </script><script>
-    (function() {
-        if (window.self === window.top) return;
-        function fire() { window.parent.postMessage({ type: 'REACT_ROOT_HAS_CHILDREN' }, '*'); }
-        function findRoot() {
-            return document.getElementById('root')
-                || document.getElementById('app')
-                || document.querySelector('[data-react-root]');
-        }
-        // One-shot: wait for DOMContentLoaded (static HTML parsed by then, so the
-        // Base44 convention <div id="root"> is either present or not coming),
-        // observe the root's childList until the first element child appears,
-        // then fire and disconnect. No tree-wide subtree observer.
-        function start() {
-            var root = findRoot();
-            if (!root) return;
-            if (root.childElementCount > 0) { fire(); return; }
-            var obs = new MutationObserver(function() {
-                if (root.childElementCount > 0) { fire(); obs.disconnect(); }
-            });
-            obs.observe(root, { childList: true });
-        }
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', start, { once: true });
-        } else { start(); }
-    })();
-    </script><script>
-    (function() {
-        if (window.self === window.top) return;
-        function postUnsupported(reason) {
-            window.parent.postMessage({
-                type: 'IFRAME_FIRST_CONTENTFUL_PAINT_UNSUPPORTED',
-                payload: { reason: reason, userAgent: navigator.userAgent }
-            }, '*');
-        }
-        if (typeof PerformanceObserver === 'undefined') {
-            postUnsupported('no_performance_observer');
-            return;
-        }
-        try {
-            var obs = new PerformanceObserver(function(list) {
-                var entries = list.getEntries();
-                for (var i = 0; i < entries.length; i++) {
-                    if (entries[i].name === 'first-contentful-paint') {
-                        obs.disconnect();
-                        window.parent.postMessage({ type: 'IFRAME_FIRST_CONTENTFUL_PAINT' }, '*');
-                        return;
-                    }
-                }
-            });
-            obs.observe({ type: 'paint', buffered: true });
-        } catch (e) {
-            postUnsupported('observe_threw:' + (e && e.name ? e.name : 'Error'));
-        }
-    })();
-    </script><script>
-    (function() {
-        if (window.self === window.top) return;
-        var APP_ID = "6afbd389b49c0b89280fb7d3";
-        var PREVIEW_TYPE = "sandbox";
-        var DEPS_PATH = '/node_modules/.vite/deps/';
-        var fired = false;
-        function isViteDep(url) {
-            return typeof url === 'string' && url.indexOf(DEPS_PATH) !== -1;
-        }
-        var confirmed = {};
-        function looksFailed(entry) {
-            // HTTP failure status (Chrome 109+).
-            if (entry.responseStatus && entry.responseStatus >= 400) return true;
-            // Aborted / blocked / network-error: request ran, nothing decoded.
-            // decodedBodySize === 0 distinguishes from cache hits (Safari has no
-            // deliveryType, so we can't rely on it to exclude cached responses).
-            return entry.transferSize === 0
-                && entry.decodedBodySize === 0
-                && entry.duration > 0
-                && entry.responseEnd > 0;
-        }
-        // WebKit has no responseStatus and zeroes every size on a cache hit, so the
-        // size heuristic alone flags every cached dep. Re-ask the server instead; a
-        // rejected HEAD proves nothing, WebKit aborts it when the frame navigates away.
-        function confirmThenReport(entry) {
-            if (confirmed[entry.name]) return;
-            confirmed[entry.name] = true;
-            fetch(entry.name, { method: 'HEAD', cache: 'no-store' }).then(function(res) {
-                var type = res.headers.get('content-type') || '';
-                if (res.status >= 400 || type.indexOf('text/html') !== -1) report(entry, res.status);
-            }, function() {});
-        }
-        function report(entry, confirmedStatus) {
-            if (fired) return;
-            fired = true;
-            var nativeBuffer = window.__base44_preview_native_failures;
-            if (nativeBuffer && typeof nativeBuffer.append === 'function') {
-                nativeBuffer.append('Failed to load module ' + entry.name);
-            }
-            window.parent.postMessage({
-                type: 'SANDBOX_VITE_DEPS_404',
-                payload: {
-                    app_id: APP_ID,
-                    preview_type: PREVIEW_TYPE,
-                    url: entry.name,
-                    initiator_type: entry.initiatorType,
-                    response_status: entry.responseStatus || confirmedStatus
-                }
-            }, '*');
-        }
-        new PerformanceObserver(function(list) {
-            if (fired) return;
-            var entries = list.getEntries();
-            for (var i = 0; i < entries.length; i++) {
-                if (isViteDep(entries[i].name) && looksFailed(entries[i])) {
-                    if ('responseStatus' in entries[i]) {
-                        report(entries[i]);
-                        return;
-                    }
-                    confirmThenReport(entries[i]);
-                }
-            }
-        }).observe({ type: 'resource', buffered: true });
-    })();
-    </script><script>
-    (function() {
-        if (typeof PerformanceObserver === 'undefined') return;
-        var reported = {};
-        // Only the app's own module trees may put an error over the preview. A page
-        // can load an optional classic script (analytics, a widget) that fails while
-        // the app renders perfectly well; that must not read as broken app code.
-        // Recording is deliberately wider than reporting — the console buffer keeps
-        // every failed module for diagnostics.
-        function isAppModule(path) {
-            return path.indexOf('/src/') === 0 || path.indexOf('/base44/') === 0;
-        }
-        function modulePath(url) {
-            try {
-                var path = new URL(url, window.location.href).pathname;
-                // The bridge probes this standard SDK path opportunistically;
-                // legacy/custom apps are allowed not to provide it.
-                if (path === '/src/api/base44Client.js') return '';
-                if (path.indexOf('/node_modules/.vite/deps/') !== -1) return '';
-                return /[.](?:[cm]?[jt]sx?)$/i.test(path) ? path : '';
-            } catch (e) {
-                return '';
-            }
-        }
-        new PerformanceObserver(function(list) {
-            var entries = list.getEntries();
-            for (var index = 0; index < entries.length; index++) {
-                var entry = entries[index];
-                if (entry.initiatorType !== 'script') continue;
-                var status = entry.responseStatus;
-                if (!status) continue;
-                var path = modulePath(entry.name);
-                if (!path) continue;
-                if (status < 400) {
-                    // Recovered (an HMR fix re-requests it). Forget it, or breaking the
-                    // same path again later this document would be silently suppressed.
-                    delete reported[path];
-                    continue;
-                }
-                var message = status === 404
-                    ? 'Module not found: ' + path
-                    : 'Module failed to load (' + status + '): ' + path;
-                var buffer = window.__base44_preview_native_failures;
-                if (buffer && typeof buffer.append === 'function') buffer.append(message);
-                if (!isAppModule(path) || reported[path] || window.self === window.top) continue;
-                reported[path] = true;
-                window.parent.postMessage({
-                    type: 'SANDBOX_MODULE_LOAD_FAILED',
-                    payload: { path: path, status: status, message: message }
-                }, '*');
-            }
-        }).observe({ type: 'resource', buffered: true });
-    })();
-    </script><script>
-    (function() {
-        if (window.self === window.top) return;
-        if (typeof performance === 'undefined' || typeof performance.getEntriesByType !== 'function') return;
-        var DEPS_PATH = '/node_modules/.vite/deps/';
-        var QUIESCENCE_MS = 1500;
-        var POLL_MS = 500;
-        var fired = false;
-        var intervalId = setInterval(function() {
-            if (fired) return;
-            var entries = performance.getEntriesByType('resource');
-            var lastDepEnd = 0;
-            for (var i = 0; i < entries.length; i++) {
-                if (entries[i].name.indexOf(DEPS_PATH) === -1) continue;
-                if (entries[i].responseEnd > lastDepEnd) lastDepEnd = entries[i].responseEnd;
-            }
-            if (lastDepEnd === 0) return;
-            if (performance.now() - lastDepEnd >= QUIESCENCE_MS) {
-                fired = true;
-                clearInterval(intervalId);
-                window.parent.postMessage({ type: 'IFRAME_VITE_DEPS_SETTLED' }, '*');
-            }
-        }, POLL_MS);
-    })();
-    </script><script>
-        window.__base44_sdk_attach = import("/src/api/base44Client.js").then(({ base44 }) => {
-            if (base44) {
-                Object.defineProperty(window, "base44_sdk", {
-                    value: base44,
-                    writable: false,
-                    configurable: true
-                });
-            }
-        }).catch((e) => {
-            // Some legacy/custom apps may not have the standard client module.
-            // Leave window.base44_sdk undefined; PreviewLens can fall back to UI/network checks.
-            window.parent.postMessage({ type: "PREVIEW_LENS_SDK_ATTACH_FAILED", error: String(e) }, "*");
+  /* barra */
+  .bar{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}
+  .bar-in{position:relative;display:flex;align-items:center;justify-content:center;height:56px;max-width:600px;margin:0 auto;padding:0 16px}
+  .logo{position:relative;display:block;overflow:hidden;height:22px;width:98px}
+  .logo img{position:absolute;height:46px;width:auto;max-width:none;left:-21px;top:-10px}
+  .bar-right{position:absolute;right:16px;top:0;bottom:0;display:flex;align-items:center;gap:6px}
+  .link-back{display:flex;align-items:center;gap:6px;border:0;background:none;cursor:pointer;font-size:12px;font-weight:500;color:rgba(26,26,26,.55);text-decoration:none}
+  .link-back:hover{color:var(--ink)}
+
+  /* perfil */
+  .head{margin-top:20px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:0 4px}
+  .avatar{width:84px;height:84px;flex:0 0 auto;border-radius:50%;overflow:hidden;background:var(--stone);box-shadow:0 0 0 4px #fff}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  .stats{display:flex;align-items:center;gap:18px;margin-bottom:6px}
+  .stat{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:rgba(26,26,26,.8);font-variant-numeric:tabular-nums}
+  .stat svg{color:rgba(26,26,26,.55)}
+  @media(min-width:640px){.head{margin-top:24px}.avatar{width:104px;height:104px}}
+
+  .name{display:flex;align-items:center;gap:6px;margin-top:12px;font-size:21px;font-weight:700;line-height:1.2;letter-spacing:-.01em;color:#000}
+  .badge-v{display:flex;align-items:center;justify-content:center;width:17px;height:17px;flex:0 0 auto;border-radius:50%;background:var(--peach);color:#fff}
+  .handle{margin-top:2px;font-size:13px;color:rgba(0,0,0,.4)}
+  .bio-wrap{margin-top:10px}
+  .bio-meta{font-size:12px;font-weight:500;letter-spacing:.01em;color:rgba(0,0,0,.42)}
+  .bio{margin-top:4px;font-size:13.5px;font-weight:500;line-height:1.5;color:rgba(0,0,0,.72);white-space:pre-line}
+
+  /* planos */
+  .plans{margin-top:32px}
+  .section-title{font-size:17px;font-weight:600;color:#000}
+  .plan-pill{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;height:54px;margin-top:12px;padding:0 20px;border:0;border-radius:999px;background:linear-gradient(90deg,var(--peach-soft),var(--peach-deep));text-align:left;cursor:pointer;transition:transform .1s}
+  .plan-pill:active{transform:scale(.985)}
+  .plan-name{font-size:15px;font-weight:500;color:rgba(0,0,0,.9);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .plan-price{font-size:15px;font-weight:600;color:#000;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .promos{margin-top:24px}
+  .promos-head{display:flex;align-items:center;justify-content:space-between;width:100%;padding:4px 0;border:0;background:none;cursor:pointer}
+  .promos-head .chev{color:rgba(0,0,0,.6);transition:transform .2s}
+  .promos.closed .chev{transform:rotate(180deg)}
+  .promos-body{display:grid;gap:10px;overflow:hidden;max-height:640px;margin-top:10px;transition:max-height .3s ease,opacity .25s ease,margin-top .3s ease;opacity:1}
+  .promos.closed .promos-body{max-height:0;margin-top:0;opacity:0}
+
+  /* abas */
+  .tabs-wrap{margin-top:36px}
+  .tabs{display:flex;gap:4px;padding:0 4px;background:rgba(242,233,222,.8);border-radius:18px 18px 0 0}
+  .tab{position:relative;flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:14px 8px 12px;border:0;background:none;font-size:13px;font-weight:500;color:rgba(26,26,26,.55);cursor:pointer;transition:color .2s}
+  .tab.active{color:#e8a066}
+  .tab.active::after{content:"";position:absolute;left:8px;right:8px;bottom:0;height:2px;border-radius:999px;background:var(--peach-deep)}
+  .tab b{font-weight:500;font-variant-numeric:tabular-nums}
+  .tab-body{margin-top:16px}
+
+  /* post */
+  .card{background:#fff;border:1px solid rgba(232,232,225,.9);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+  .post{margin-bottom:12px}
+  .post-head{display:flex;align-items:center;gap:10px}
+  .post-avatar{width:36px;height:36px;flex:0 0 auto;border-radius:50%;overflow:hidden;background:var(--sand)}
+  .post-avatar img{width:100%;height:100%;object-fit:cover}
+  .post-user{display:flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--ink)}
+  .post-handle{font-size:11.5px;color:rgba(26,26,26,.45)}
+  .menu-wrap{position:relative;margin-left:auto}
+  .menu-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:0;border-radius:50%;background:none;color:rgba(26,26,26,.45);cursor:pointer}
+  .menu-btn:hover{background:rgba(26,26,26,.04);color:var(--ink)}
+  .menu{position:absolute;right:0;top:36px;z-index:20;min-width:220px;padding:4px;background:#fff;border:1px solid var(--stone);border-radius:12px;box-shadow:0 12px 32px -18px rgba(26,26,26,.3)}
+  .menu-item{display:flex;align-items:center;gap:8px;width:100%;padding:9px 10px;border:0;border-radius:8px;background:none;text-align:left;font-size:12.5px;color:var(--ink);cursor:pointer}
+  .menu-item:hover{background:var(--sand)}
+
+  .locked{position:relative;margin-top:12px;border-radius:12px;overflow:hidden;background:var(--sand)}
+  .locked-ratio{position:relative;width:100%;aspect-ratio:4/5}
+  @media(min-width:640px){.locked-ratio{aspect-ratio:4/3}}
+  .locked-ratio img{width:100%;height:100%;object-fit:cover;filter:blur(4px);transform:scale(1.05)}
+  .locked-veil{position:absolute;inset:0;background:rgba(242,233,222,.72)}
+  .locked-body{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:0 24px}
+  .lock-circle{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:rgba(26,26,26,.85);color:#fff;box-shadow:0 10px 15px -3px rgba(0,0,0,.25)}
+  .locked-text{max-width:24ch;text-align:center;font-size:11.5px;font-weight:500;line-height:1.35;color:rgba(26,26,26,.55)}
+  .locked-meta{display:flex;align-items:center;gap:16px;font-size:12px;font-weight:500;color:rgba(26,26,26,.55)}
+  .locked-meta span{display:flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}
+  .caption{margin-top:12px;font-size:13.5px;font-weight:700;line-height:1.6;color:rgba(26,26,26,.8);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+  /* combo */
+  .combo{margin-top:12px;padding:16px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:#151515}
+  .combo h3{font-size:15px;font-weight:700;color:#fff}
+  .combo .sub{margin-top:4px;font-size:12.5px;line-height:1.3;color:rgba(255,255,255,.55)}
+  .combo ul{list-style:none;margin-top:14px;display:grid;gap:8px}
+  .combo li{display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.3;color:rgba(255,255,255,.9)}
+  .tick{display:flex;align-items:center;justify-content:center;width:18px;height:18px;flex:0 0 auto;margin-top:1px;border-radius:5px;background:#10b981;color:#fff}
+  .combo-btn{width:100%;height:48px;margin-top:16px;border:0;border-radius:999px;background:#ff9933;color:#000;font-size:14px;font-weight:700;cursor:pointer}
+
+  /* faq */
+  .faq{margin-top:28px}
+  .faq h2{text-align:center;font-family:var(--head);font-size:22px;color:var(--brand)}
+  .faq-list{margin-top:16px;display:grid;gap:8px}
+  .faq-item{border:1px solid var(--stone);border-radius:12px;background:#fff;overflow:hidden}
+  .faq-item.open{border-color:rgba(26,26,26,.6)}
+  .faq-q{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:12px 16px;border:0;background:none;text-align:left;font-size:13px;font-weight:600;color:var(--ink);cursor:pointer}
+  .faq-a{padding:0 16px 12px;font-size:12.5px;line-height:1.6;color:rgba(26,26,26,.6)}
+  .faq-icon{display:flex;color:var(--brand)}
+
+  /* mídias */
+  .media-grid{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .tile{position:relative;aspect-ratio:1/1;border-radius:16px;background:var(--sand);overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .tile::before{content:"";position:absolute;width:66%;height:66%;border-radius:50%;background:rgba(255,255,255,.25)}
+  .tile svg{position:relative;color:#475569}
+
+  /* rodapé */
+  .footer{margin-top:48px;padding-top:24px;border-top:1px solid rgba(0,0,0,.1);text-align:center}
+  .footer-logo{display:flex;justify-content:center}
+  .footer-logo .logo{height:16px;width:72px}
+  .footer-logo .logo img{height:34px;left:-15px;top:-8px}
+  .footer-links{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;font-size:11.5px;color:rgba(0,0,0,.45)}
+  .footer-links a{text-decoration:none}
+  .footer-links a:hover{color:var(--ink)}
+  .age{margin-top:12px;font-size:10.5px;color:rgba(26,26,26,.3)}
+
+  /* barra fixa */
+  .sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:40;padding-bottom:env(safe-area-inset-bottom);transform:translateY(110%);transition:transform .3s;pointer-events:none}
+  .sticky-bar.show{transform:none}
+  .sticky-in{max-width:560px;margin:0 auto;padding:0 16px 12px;pointer-events:auto}
+  .sticky-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:14px 20px;border:0;border-radius:16px;background:var(--ink);color:var(--ivory);cursor:pointer;box-shadow:0 20px 60px -28px rgba(26,26,26,.4)}
+  .sticky-btn .l{display:flex;flex-direction:column;text-align:left}
+  .sticky-btn .l b{font-size:13.5px;font-weight:600;line-height:1.25}
+  .sticky-btn .l small{font-size:11px;color:rgba(249,249,247,.55)}
+  .sticky-btn .r{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+
+  /* checkout + pagamento */
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:56px;border:0;border-radius:16px;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:filter .15s}
+  .btn:disabled{opacity:.7;cursor:default}
+  .btn-brand{background:var(--brand);color:#fff;box-shadow:0 16px 36px -20px rgba(255,77,0,.9)}
+  .btn-green{background:#059669;color:#fff;box-shadow:0 20px 40px -20px rgba(5,150,105,.9)}
+  .btn-ink{background:var(--ink);color:var(--ivory)}
+  .btn-outline{border:1px solid rgba(26,26,26,.12);background:#fff;color:var(--ink);text-transform:none;letter-spacing:0}
+  .foot-note{display:flex;align-items:flex-start;gap:6px;margin-top:12px;font-size:11px;line-height:1.6;color:rgba(26,26,26,.4)}
+
+  .loader{display:inline-block;width:16px;height:16px;border:2px solid rgba(26,26,26,.15);border-top-color:rgba(26,26,26,.6);border-radius:50%;animation:site-spin 1s linear infinite}
+  .loader.light{border-color:rgba(255,255,255,.35);border-top-color:#fff}
+  @keyframes site-spin{to{transform:rotate(360deg)}}
+  .loading-box{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:32px;padding:44px 16px;border-radius:16px;background:rgba(255,255,255,.6);font-size:13px;color:rgba(26,26,26,.55)}
+  .alert-card{margin-top:24px;padding:24px;border:1px solid var(--stone);border-radius:16px;background:#fff;text-align:center}
+  .alert-card p{font-size:13.5px;line-height:1.6;color:rgba(26,26,26,.7)}
+  .err{display:flex;align-items:flex-start;gap:8px;margin-top:16px;padding:10px 12px;border-radius:12px;background:#fef2f2;color:#b91c1c;font-size:12px;line-height:1.5}
+
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  .pill.wait{background:#fef3c7;color:#b45309}
+  .pill.paid{background:#d1fae5;color:#047857}
+  .pill.fail{background:#fee2e2;color:#b91c1c}
+  .dot{width:6px;height:6px;border-radius:50%;background:#f59e0b;animation:site-pulse 1.6s ease-in-out infinite}
+  @keyframes site-pulse{0%,100%{opacity:1}50%{opacity:.55}}
+
+  .summary{margin-top:24px;padding:16px;border:1px solid rgba(232,232,225,.9);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+  .summary .label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,26,.45)}
+  .summary .plan{margin-top:4px;font-size:15px;font-weight:600;color:var(--ink)}
+  .summary .desc{margin-top:2px;font-size:12px;color:rgba(26,26,26,.5)}
+  .summary .price{font-size:17px;font-weight:600;color:var(--brand);font-variant-numeric:tabular-nums}
+  .summary .seal{display:flex;align-items:center;gap:6px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(232,232,225,.7);font-size:11px;color:rgba(26,26,26,.45)}
+
+  .pix-card{margin-top:20px;padding:16px;border:1px solid rgba(232,232,225,.9);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+  .pix-qr{max-width:260px;margin:0 auto;padding:8px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center}
+  .pix-qr img{width:100%;max-width:240px;height:auto;border-radius:8px}
+  .pix-qr .no-qr{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;width:100%;padding:0 16px;border-radius:8px;background:rgba(232,232,225,.5);text-align:center;font-size:11.5px;color:rgba(26,26,26,.5)}
+  .pix-hint{margin-top:16px;text-align:center;font-size:11.5px;color:rgba(26,26,26,.45)}
+  .pix-code{margin-top:12px;padding:10px;border:1px solid var(--stone);border-radius:12px;background:rgba(242,242,242,.7);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;line-height:1.6;color:rgba(26,26,26,.55);word-break:break-all;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .copy-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:48px;margin-top:12px;border:0;border-radius:12px;background:var(--ink);color:var(--ivory);font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+  .copy-btn:disabled{opacity:.5}
+  .auto-check{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:16px;font-size:11.5px;color:rgba(26,26,26,.45)}
+  .success-icon{display:flex;align-items:center;justify-content:center;width:56px;height:56px;margin:0 auto;border-radius:50%;background:#d1fae5;color:#059669}
+  .code-box{margin-top:8px;padding:10px;border-radius:10px;background:rgba(242,242,242,.8);font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(26,26,26,.6);word-break:break-all}
+  .text-btn{display:flex;align-items:center;gap:6px;margin-top:10px;border:0;background:none;font-size:11.5px;font-weight:500;color:rgba(26,26,26,.6);cursor:pointer}
+  .text-btn:hover{color:var(--ink)}
+
+  /* funil */
+  .attention{position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(232,232,225,.7);background:rgba(249,249,247,.95);backdrop-filter:blur(8px)}
+  .attention-in{display:flex;justify-content:center;max-width:520px;margin:0 auto;padding:12px 16px}
+  .attention-icon{position:relative;display:flex;align-items:center;justify-content:center;width:64px;height:64px}
+  .attention-icon .ping{position:absolute;inset:0;border-radius:50%;background:rgba(254,202,202,.7);animation:site-ping 1.4s cubic-bezier(0,0,.2,1) infinite}
+  .attention-icon .core{position:relative;display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:#fef2f2;box-shadow:0 0 0 4px #fecaca;font-size:32px;line-height:1}
+  @keyframes site-ping{0%{transform:scale(1);opacity:.75}75%,100%{transform:scale(1.5);opacity:0}}
+  .funnel-article{padding:20px;border:1px solid rgba(232,232,225,.9);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+  .funnel-article p{margin-top:12px;font-size:14px;line-height:1.7;color:rgba(26,26,26,.75);white-space:pre-line}
+  .funnel-article p:first-child{margin-top:0;font-family:var(--head);font-size:25px;line-height:1.3;color:var(--ink)}
+  .demo-box{margin-top:16px;padding:12px;border:1px dashed rgba(26,26,26,.25);border-radius:16px;background:#fff}
+  .demo-box .tag{text-align:center;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,26,.35)}
+  .demo-box button{height:44px;margin-top:8px;border-radius:12px;font-size:12.5px;text-transform:none;letter-spacing:0}
+  .final-links{margin-top:24px;display:grid;gap:12px}
+  .final-links a{display:flex;align-items:center;justify-content:center;height:64px;border-radius:16px;background:#059669;color:#fff;font-size:15px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;box-shadow:0 20px 40px -20px rgba(5,150,105,.9)}
+  .final-links a:hover{background:#047857}
+  .celebrate{display:flex;align-items:center;justify-content:center;width:64px;height:64px;margin:0 auto;border-radius:50%;background:#d1fae5;font-size:32px}
+</style>
+</head>
+<body>
+
+<!-- ===================== PERFIL ===================== -->
+<div id="view-home">
+  <header class="bar">
+    <div class="bar-in">
+      <a href="#/" class="logo" aria-label="Início">
+        <img src="https://base44.app/api/apps/6aee158aed9deb22110b5a0c/files/mp/public/6aee158aed9deb22110b5a0c/55e8c1497_privacy-logo.png" alt="orla" />
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <div class="head">
+        <div class="avatar">
+          <img src="https://base44.app/api/apps/6afbd389b49c0b89280fb7d3/files/mp/public/6afbd389b49c0b89280fb7d3/3a0f18231_gabriel-farias-021.png" alt="Gabriel Farias" />
+        </div>
+        <div class="stats">
+          <span class="stat">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+            <span>298</span>
+          </span>
+          <span class="stat">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+            <span>561</span>
+          </span>
+          <span class="stat">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+            <span>1</span>
+          </span>
+          <span class="stat">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>1,2 mil</span>
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="name">
+          <span>Gabriel Farias</span>
+          <span class="badge-v"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </h1>
+        <p class="handle">@bielzin.rj021</p>
+        <div class="bio-wrap">
+          <p class="bio-meta">021 | cpx alemão Rj</p>
+          <p class="bio">O que você deseja
+
+ESCOLHE SEU ACESSO AQUI EMBAIXO</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="planos">
+      <h2 class="section-title">Assinaturas</h2>
+      <button class="plan-pill" type="button" data-plan="6aee184e986b2b8297c58f11">
+        <span class="plan-name">1 Mês</span>
+        <span class="plan-price">R$&nbsp;9,90</span>
+      </button>
+
+      <div class="promos" id="promos">
+        <button class="promos-head" type="button" aria-expanded="true" aria-controls="promos-body">
+          <span class="section-title">Promoções</span>
+          <span class="chev">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+          </span>
+        </button>
+        <div class="promos-body" id="promos-body">
+          <button class="plan-pill" type="button" data-plan="6aee184e986b2b8297c58f12">
+            <span class="plan-name">3 Meses + (Bônus)</span>
+            <span class="plan-price">R$&nbsp;19,90</span>
+          </button>
+          <button class="plan-pill" type="button" data-plan="6aee184e986b2b8297c58f13">
+            <span class="plan-name">Vitalício + (WhatsApp)</span>
+            <span class="plan-price">R$&nbsp;29,90</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs-wrap">
+      <div class="tabs" role="tablist">
+        <button class="tab active" type="button" role="tab" data-tab="posts">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+          <span><b>298</b> Postagens</span>
+        </button>
+        <button class="tab" type="button" role="tab" data-tab="media">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+          <span><b>561</b> Mídias</span>
+        </button>
+      </div>
+
+      <div class="tab-body">
+        <article class="card post" id="panel-posts">
+          <header class="post-head">
+            <div class="post-avatar">
+              <img src="https://base44.app/api/apps/6afbd389b49c0b89280fb7d3/files/mp/public/6afbd389b49c0b89280fb7d3/3a0f18231_gabriel-farias-021.png" alt="" />
+            </div>
+            <div>
+              <div class="post-user">
+                <span>Gabriel Farias</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div class="post-handle">@bielzin.rj021</div>
+            </div>
+            <div class="menu-wrap">
+              <button class="menu-btn" type="button" aria-label="Mais opções" id="menu-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+              </button>
+              <div class="menu" id="menu" hidden>
+                <button class="menu-item" type="button" id="copy-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                  <span id="copy-label">Copiar link da publicação</span>
+                </button>
+                <button class="menu-item" type="button" id="see-plans">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8-6.1.1 4.9 3.6-1.9 5.8 5-3.6 5 3.6-1.9-5.8 4.9-3.6-6.1-.1z"/></svg>
+                  <span>Ver planos de assinatura</span>
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <div class="locked">
+            <div class="locked-ratio">
+              <img src="https://base44.app/api/apps/6afbd389b49c0b89280fb7d3/files/mp/public/6afbd389b49c0b89280fb7d3/460fcca91_gabriel-farias-bloqueada.png" alt="" aria-hidden="true" loading="lazy" />
+              <div class="locked-veil"></div>
+              <div class="locked-body">
+                <div class="lock-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+                </div>
+                <p class="locked-text">Conteúdo exclusivo para assinantes</p>
+                <div class="locked-meta">
+                  <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+                    6
+                  </span>
+                  <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    1,2 mil
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="caption">Meu pau tá pulsando... Vem ver o que seu carioca fez hoje na favela🔞🔥</p>
+
+          <div class="combo">
+            <h3>🔥 Super Combo Exclusivo</h3>
+            <p class="sub">Tudo o que tenho a oferecer em um único pacote</p>
+            <ul>
+              <li><span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Acesso Vitalício ao meu Privacy</span></li>
+              <li><span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Entrada no meu Grupo VIP no Telegram</span></li>
+              <li><span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Uma live exclusiva comigo</span></li>
+              <li><span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Meu WhatsApp</span></li>
+              <li><span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Pedidos de vídeo exclusivos personalizados por mim</span></li>
+            </ul>
+            <button class="combo-btn" type="button" data-plan="6aee714a3a3497c148fbbfd5">🔥 Super Combo Exclusivo R$&nbsp;49,90</button>
+          </div>
+
+          <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-q" type="button" aria-expanded="false"><span>É sigiloso? Vai aparecer na fatura?</span><span class="faq-icon"></span></button>
+                <p class="faq-a" hidden>Sim, é sigiloso. Cobrança discreta, sem nomes chamativos. Seus dados ficam criptografados.</p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button" aria-expanded="false"><span>Quando tenho acesso depois do pagamento?</span><span class="faq-icon"></span></button>
+                <p class="faq-a" hidden>Imediato. Pagamento aprovado = liberação em até 10s.</p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button" aria-expanded="false"><span>Posso cancelar quando quiser? A assinatura renova?</span><span class="faq-icon"></span></button>
+                <p class="faq-a" hidden>Sim. Você pode cancelar a renovação automática pela área do assinante a qualquer momento.</p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button" aria-expanded="false"><span>Tem reembolso?</span><span class="faq-icon"></span></button>
+                <p class="faq-a" hidden>Sim. Reembolso de 7 dias sem burocracia. Se não curtir, devolvemos 100%.</p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button" aria-expanded="false"><span>Como funciona o chat exclusivo?</span><span class="faq-icon"></span></button>
+                <p class="faq-a" hidden>Basta mandar uma mensagem no chat e combinar com o Pedro.</p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button" aria-expanded="false"><span>Posso pedir conteúdo personalizado?</span><span class="faq-icon"></span></button>
+                <p class="faq-a" hidden>Sim! Solicitações podem ser feitas no chat, com o conteúdo desejado.</p>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <div id="panel-media" hidden>
+          <div class="card">
+            <div class="media-grid" id="media-grid"></div>
+            <p class="muted" style="margin-top:12px;font-size:11.5px;text-align:center">Conteúdo exclusivo para assinantes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <a href="#/" class="logo" aria-label="Início">
+          <img src="https://base44.app/api/apps/6aee158aed9deb22110b5a0c/files/mp/public/6aee158aed9deb22110b5a0c/55e8c1497_privacy-logo.png" alt="orla" />
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="#/">Termos de Uso</a>
+        <span aria-hidden="true">•</span>
+        <a href="#/">Política de Privacidade</a>
+      </div>
+      <p class="age">Conteúdo para maiores de 18 anos. Pagamento processado via PIX.</p>
+    </footer>
+  </main>
+
+  <div class="sticky-bar" id="sticky">
+    <div class="sticky-in">
+      <button class="sticky-btn" type="button" data-plan="6aee184e986b2b8297c58f11">
+        <span class="l">
+          <b>Assinar 1 Mês</b>
+          <small>Acesso imediato após o PIX</small>
+        </span>
+        <span class="r">R$&nbsp;9,90
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== CHECKOUT ===================== -->
+<div id="view-checkout" hidden>
+  <header class="bar">
+    <div class="bar-in">
+      <a href="#/" class="logo" aria-label="Início">
+        <img src="https://base44.app/api/apps/6aee158aed9deb22110b5a0c/files/mp/public/6aee158aed9deb22110b5a0c/55e8c1497_privacy-logo.png" alt="orla" />
+      </a>
+      <div class="bar-right"><a class="link-back" href="#/">Voltar</a></div>
+    </div>
+  </header>
+  <main class="page">
+    <h1 class="page-title">Pagamento por PIX</h1>
+    <p class="page-sub">Geramos o QR Code automaticamente. Não é preciso preencher cadastro.</p>
+    <div id="checkout-body"></div>
+  </main>
+</div>
+
+<!-- ===================== PAGAMENTO ===================== -->
+<div id="view-payment" hidden>
+  <header class="bar">
+    <div class="bar-in">
+      <a href="#/" class="logo" aria-label="Início">
+        <img src="https://base44.app/api/apps/6aee158aed9deb22110b5a0c/files/mp/public/6aee158aed9deb22110b5a0c/55e8c1497_privacy-logo.png" alt="orla" />
+      </a>
+      <div class="bar-right"><a class="link-back" href="#/">Início</a></div>
+    </div>
+  </header>
+  <main class="page">
+    <div class="row-between">
+      <h1 class="page-title" id="pay-title">Pagamento via PIX</h1>
+      <span id="pay-pill"></span>
+    </div>
+    <p class="page-sub" id="pay-code">Pedido —</p>
+    <div id="payment-body"></div>
+  </main>
+</div>
+
+<!-- ===================== ETAPA DO FUNIL ===================== -->
+<div id="view-step" hidden>
+  <div class="attention">
+    <div class="attention-in">
+      <div class="attention-icon">
+        <span class="ping"></span>
+        <span class="core">⚠️</span>
+      </div>
+    </div>
+  </div>
+  <main class="page" id="step-body" style="padding-top:16px"></main>
+</div>
+
+<!-- ===================== LIBERADO ===================== -->
+<div id="view-final" hidden>
+  <header class="bar">
+    <div class="bar-in">
+      <a href="#/" class="logo" aria-label="Início">
+        <img src="https://base44.app/api/apps/6aee158aed9deb22110b5a0c/files/mp/public/6aee158aed9deb22110b5a0c/55e8c1497_privacy-logo.png" alt="orla" />
+      </a>
+      <div class="bar-right"><a class="link-back" href="#/">Início</a></div>
+    </div>
+  </header>
+  <main class="page" id="final-body" style="padding-top:40px"></main>
+</div>
+
+<script>
+(function () {
+  var APP = '6aee158aed9deb22110b5a0c';
+  var API = 'https://base44.app/api/apps/' + APP;
+  var HEADERS = { 'X-App-Id': APP, 'Content-Type': 'application/json' };
+
+  var ICON_COPY = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+  var ICON_SHIELD = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>';
+  var ICON_ALERT = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>';
+  var ICON_CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>';
+  var ICON_LOCK = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>';
+
+  function esc(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  var money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+  function brl(value) { return money.format(Number(value || 0)); }
+
+  function dateLabel(value) {
+    if (!value) return '—';
+    var date = new Date(value);
+    if (isNaN(date.getTime())) return '—';
+    return date.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+  }
+
+  function lsGet(key) { try { return localStorage.getItem(key) || ''; } catch (e) { return ''; } }
+  function lsSet(key, value) { try { localStorage.setItem(key, value || ''); } catch (e) { /* ignora */ } }
+
+  function readJson(response) {
+    return response.text().then(function (text) {
+      var data = {};
+      try { data = text ? JSON.parse(text) : {}; } catch (e) { data = {}; }
+      if (!response.ok) throw new Error((data && (data.error || data.message)) || 'Não foi possível concluir a operação.');
+      if (data && data.error) throw new Error(data.error);
+      return data || {};
+    });
+  }
+
+  function apiGet(path) {
+    return fetch(API + path, { headers: HEADERS, cache: 'no-store' }).then(readJson);
+  }
+
+  function callFn(name, body) {
+    return fetch(API + '/functions/' + name, {
+      method: 'POST', headers: HEADERS, body: JSON.stringify(body || {})
+    }).then(readJson);
+  }
+
+  var timers = [];
+  function clearTimers() {
+    timers.forEach(function (timer) { clearInterval(timer); });
+    timers = [];
+  }
+
+  var VIEWS = ['view-home', 'view-checkout', 'view-payment', 'view-step', 'view-final'];
+  function showView(id) {
+    VIEWS.forEach(function (name) {
+      document.getElementById(name).hidden = name !== id;
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function parseHash() {
+    var raw = (window.location.hash || '').replace(/^#/, '') || '/';
+    var index = raw.indexOf('?');
+    var path = (index >= 0 ? raw.slice(0, index) : raw) || '/';
+    path = path.replace(/\/+$/, '') || '/';
+    var params = new URLSearchParams(index >= 0 ? raw.slice(index + 1) : '');
+    return { path: path, params: params };
+  }
+
+  function go(path, token) {
+    var target = String(path || '/').replace(/^https?:\/\/[^\/]+/, '').replace(/^\/+/, '');
+    target = target.replace(/^taxa-/, 'taxa/');
+    var index = target.indexOf('?');
+    var query = index >= 0 ? target.slice(index + 1) : '';
+    if (index >= 0) target = target.slice(0, index);
+    var params = new URLSearchParams(query);
+    if (token && !params.get('t')) params.set('t', token);
+    var qs = params.toString();
+    var next = '#/' + target + (qs ? '?' + qs : '');
+    if (window.location.hash === next) route();
+    else window.location.hash = next;
+  }
+
+  function loadingHtml(text) {
+    return '<div class="loading-box"><span class="loader"></span><span>' + esc(text) + '</span></div>';
+  }
+
+  function errorLine(message) {
+    return '<div class="err">' + ICON_ALERT + '<span>' + esc(message) + '</span></div>';
+  }
+
+  function pillHtml(status) {
+    if (status === 'paid') return '<span class="pill paid">' + ICON_CHECK + 'Pago</span>';
+    if (status === 'failed' || status === 'expired') {
+      return '<span class="pill fail">' + ICON_ALERT + (status === 'expired' ? 'Expirado' : 'Falhou') + '</span>';
+    }
+    return '<span class="pill wait"><span class="dot"></span>Aguardando pagamento</span>';
+  }
+
+  function summaryHtml(plan) {
+    var months = Number(plan.duration_months || 1);
+    var description = months === 1 ? 'Acesso por 1 mês'
+      : months >= 100 ? 'Acesso vitalício'
+      : 'Acesso por ' + months + ' meses';
+    if (Number(plan.discount_percent) > 0) description += ' · ' + plan.discount_percent + '% off';
+    return '<div class="summary">'
+      + '<div class="row-between" style="align-items:flex-start">'
+      + '<div><p class="label">Seu pedido</p>'
+      + '<p class="plan">Assinatura ' + esc(plan.name) + '</p>'
+      + '<p class="desc">' + esc(description) + '</p></div>'
+      + '<p class="price">' + brl(plan.price) + '</p>'
+      + '</div>'
+      + '<div class="seal">' + ICON_SHIELD + 'Acesso liberado automaticamente após a confirmação do PIX.</div>'
+      + '</div>';
+  }
+
+  function pixHtml(qr, code) {
+    var qrBlock = qr
+      ? '<img src="' + esc(qr) + '" alt="QR Code PIX" />'
+      : '<div class="no-qr">Use o código copia e cola abaixo no app do seu banco.</div>';
+    return '<div class="pix-card">'
+      + '<div class="pix-qr">' + qrBlock + '</div>'
+      + '<p class="pix-hint">Abra o app do banco, escolha PIX → Ler QR Code.</p>'
+      + '<div class="pix-code">' + esc(code || 'Código PIX indisponível') + '</div>'
+      + '<button class="copy-btn" type="button" data-copy="' + esc(code || '') + '"' + (code ? '' : ' disabled') + '>'
+      + ICON_COPY + '<span>Copiar PIX</span></button>'
+      + '</div>';
+  }
+
+  /* ---------- HOME ---------- */
+  var sticky = document.getElementById('sticky');
+  function onScroll() {
+    if (!sticky) return;
+    sticky.classList.toggle('show', window.scrollY > 520);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  (function buildMedia() {
+    var grid = document.getElementById('media-grid');
+    var tile = '<div class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div>';
+    grid.innerHTML = tile + tile + tile + tile + tile + tile;
+  })();
+
+  var promos = document.getElementById('promos');
+  promos.querySelector('.promos-head').addEventListener('click', function () {
+    var closed = promos.classList.toggle('closed');
+    this.setAttribute('aria-expanded', closed ? 'false' : 'true');
+  });
+
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (other) { other.classList.remove('active'); });
+      tab.classList.add('active');
+      var isPosts = tab.getAttribute('data-tab') === 'posts';
+      document.getElementById('panel-posts').hidden = !isPosts;
+      document.getElementById('panel-media').hidden = isPosts;
+    });
+  });
+
+  var menu = document.getElementById('menu');
+  document.getElementById('menu-btn').addEventListener('click', function (event) {
+    event.stopPropagation();
+    menu.hidden = !menu.hidden;
+  });
+  document.addEventListener('click', function () { menu.hidden = true; });
+  menu.addEventListener('click', function (event) { event.stopPropagation(); });
+
+  document.getElementById('see-plans').addEventListener('click', function () {
+    menu.hidden = true;
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  document.getElementById('copy-link').addEventListener('click', function () {
+    var label = document.getElementById('copy-label');
+    var link = window.location.origin + window.location.pathname + '?post=6aee184ec3cfec4c9a26be51';
+    var done = function () {
+      label.textContent = 'Link copiado';
+      setTimeout(function () { label.textContent = 'Copiar link da publicação'; }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(link).then(done, done);
+    else done();
+  });
+
+  var ICON_PLUS = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>';
+  var ICON_MINUS = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg>';
+  document.querySelectorAll('.faq-q').forEach(function (button) {
+    button.querySelector('.faq-icon').innerHTML = ICON_PLUS;
+    button.addEventListener('click', function () {
+      var item = button.closest('.faq-item');
+      var answer = item.querySelector('.faq-a');
+      var open = item.classList.toggle('open');
+      answer.hidden = !open;
+      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+      button.querySelector('.faq-icon').innerHTML = open ? ICON_MINUS : ICON_PLUS;
+    });
+  });
+
+  /* ---------- CHECKOUT ---------- */
+  var checkoutRun = 0;
+  function runCheckout(planId, demo) {
+    var body = document.getElementById('checkout-body');
+    var run = ++checkoutRun;
+    var active = function () { return run === checkoutRun; };
+
+    var unavailable = '<div class="alert-card"><p>Este plano não está mais disponível.</p>'
+      + '<a class="btn btn-ink" href="#/" style="margin-top:16px;height:44px;text-transform:none;letter-spacing:0">Escolher outro plano</a></div>';
+
+    if (!planId) {
+      body.innerHTML = '<div class="alert-card"><p>Escolha um plano para continuar.</p>'
+        + '<a class="btn btn-ink" href="#/" style="margin-top:16px;height:44px;text-transform:none;letter-spacing:0">Ver planos</a></div>';
+      return;
+    }
+
+    body.innerHTML = loadingHtml('Gerando cobrança PIX…');
+
+    apiGet('/entities/SubscriptionPlan/' + encodeURIComponent(planId)).then(function (plan) {
+      if (!active()) return null;
+      if (!plan || plan.active === false) {
+        body.innerHTML = unavailable;
+        return null;
+      }
+      body.innerHTML = summaryHtml(plan) + '<div style="margin-top:20px">' + loadingHtml('Gerando cobrança PIX…') + '</div>';
+      return callFn(demo ? 'createDemoOrder' : 'createPixCharge', { plan_id: planId }).then(function (data) {
+        if (!active()) return;
+        if (!data.order) throw new Error(data.error || 'Não foi possível gerar a cobrança.');
+        lsSet('gf:token', data.access_token || '');
+        go('/pagamento/' + data.order.order_code, data.access_token || '');
+      });
+    }).catch(function (error) {
+      if (!active()) return;
+      body.innerHTML = errorLine(error.message || 'Não foi possível gerar a cobrança PIX.')
+        + '<button class="btn btn-brand" style="margin-top:16px" type="button" id="retry-charge">Gerar PIX novamente</button>'
+        + '<p class="foot-note">' + ICON_LOCK + 'O valor é conferido no servidor, direto no plano cadastrado, antes de gerar o PIX.</p>';
+      var retry = document.getElementById('retry-charge');
+      if (retry) retry.addEventListener('click', function () { runCheckout(planId, demo); });
+    });
+  }
+
+  /* ---------- PAGAMENTO ---------- */
+  var funnelStarted = false;
+
+  function startFunnel(token, force) {
+    if (funnelStarted && !force) return;
+    funnelStarted = true;
+    callFn('funnelStart', { access_token: token }).then(function (data) {
+      if (data.token && data.redirect) {
+        lsSet('gf:funnel', data.token);
+        go(data.redirect, data.token);
+      } else {
+        funnelStarted = false;
+      }
+    }).catch(function () { funnelStarted = false; });
+  }
+
+  function runPayment(code, tokenFromUrl) {
+    var token = tokenFromUrl || lsGet('gf:token') || '';
+    if (tokenFromUrl) lsSet('gf:token', tokenFromUrl);
+    var body = document.getElementById('payment-body');
+    var title = document.getElementById('pay-title');
+    var pill = document.getElementById('pay-pill');
+    document.getElementById('pay-code').textContent = 'Pedido ' + code;
+
+    if (!token) {
+      title.textContent = 'Pagamento via PIX';
+      pill.innerHTML = '';
+      body.innerHTML = '<div class="alert-card"><p>Código de acesso ausente. Abra o link completo do pedido.</p>'
+        + '<a class="btn btn-ink" href="#/" style="margin-top:16px;height:44px;text-transform:none;letter-spacing:0">Voltar ao início</a></div>';
+      return;
+    }
+
+    var handledPaid = false;
+
+    function render(data) {
+      var status = data.status;
+      title.textContent = status === 'paid' ? 'Pagamento aprovado' : 'Pagamento via PIX';
+      pill.innerHTML = pillHtml(status);
+
+      if (status === 'paid') {
+        var planName = (data.subscription && data.subscription.plan_name) || (data.order && data.order.plan_name) || '';
+        var expires = dateLabel(data.subscription && data.subscription.expires_at);
+        body.innerHTML = '<div class="card center" style="margin-top:24px;padding:24px">'
+          + '<div class="success-icon">' + ICON_CHECK + '</div>'
+          + '<h2 style="margin-top:16px;font-family:var(--head);font-size:24px">PAGAMENTO APROVADO</h2>'
+          + '<p style="margin-top:4px;font-size:13px;color:rgba(26,26,26,.6)">Assinatura ' + esc(planName) + ' ativa até ' + esc(expires) + '.</p>'
+          + '<button class="btn btn-green" id="release" style="margin-top:20px;height:48px;font-size:13px" type="button">Liberando seu acesso…</button>'
+          + '</div>'
+          + '<div class="pix-card">'
+          + '<p style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,26,.45)">Código de acesso</p>'
+          + '<div class="code-box">' + esc(token) + '</div>'
+          + '<button class="text-btn" type="button" data-copy="' + esc(token) + '">' + ICON_COPY + 'Copiar para usar em outro aparelho</button>'
+          + '</div>';
+        document.getElementById('release').addEventListener('click', function () { startFunnel(token, true); });
+        if (!handledPaid) { handledPaid = true; startFunnel(token); }
+        return;
+      }
+
+      var summary = data.order
+        ? summaryHtml({
+            name: data.order.plan_name,
+            price: data.order.amount,
+            duration_months: data.order.duration_months,
+            discount_percent: data.order.discount_percent
+          })
+        : '';
+      body.innerHTML = summary
+        + pixHtml(data.qr, data.order ? data.order.pix_code : '')
+        + '<div class="auto-check"><span class="loader" style="width:14px;height:14px"></span>Verificamos seu pagamento automaticamente.</div>'
+        + '<button class="btn btn-outline" id="pay-refresh" style="margin-top:16px;height:44px;font-size:12.5px" type="button">Já paguei, atualizar</button>';
+      document.getElementById('pay-refresh').addEventListener('click', load);
+
+      if (status === 'pending') {
+        var timer = setInterval(function () {
+          callFn('checkPixStatus', { order_code: code, access_token: token }).then(function (next) {
+            if (next.status !== 'pending') { clearInterval(timer); render(next); }
+          }).catch(function () { /* segue tentando */ });
+        }, 8000);
+        timers.push(timer);
+      }
+    }
+
+    function load() {
+      body.innerHTML = loadingHtml('Carregando cobrança…');
+      callFn('checkPixStatus', { order_code: code, access_token: token }).then(render).catch(function (error) {
+        title.textContent = 'Pagamento via PIX';
+        pill.innerHTML = '';
+        body.innerHTML = '<div class="alert-card"><p>' + esc(error.message || 'Falha ao consultar o pagamento.') + '</p>'
+          + '<button class="btn btn-ink" id="pay-retry" style="margin-top:16px;height:44px;text-transform:none;letter-spacing:0" type="button">Tentar novamente</button></div>';
+        document.getElementById('pay-retry').addEventListener('click', load);
+      });
+    }
+
+    load();
+  }
+
+  /* ---------- ETAPA DO FUNIL ---------- */
+  var stepRun = 0;
+  function runStep(step, tokenFromUrl) {
+    var token = tokenFromUrl || lsGet('gf:funnel') || '';
+    if (tokenFromUrl) lsSet('gf:funnel', token);
+    var body = document.getElementById('step-body');
+    var run = ++stepRun;
+    var active = function () { return run === stepRun; };
+    var state = { data: null, charge: null };
+    var poll = null;
+
+    if (!token) {
+      body.innerHTML = '<div class="alert-card"><p>Acesso não identificado. Abra o link da sua liberação.</p></div>';
+      return;
+    }
+
+    function render() {
+      var data = state.data || {};
+      var charge = state.charge || data.charge || null;
+      var html = '<article class="funnel-article">'
+        + (data.blocks || []).map(function (block) { return '<p>' + esc(block) + '</p>'; }).join('')
+        + '</article>';
+
+      if (charge) {
+        html += pixHtml(charge.qr, charge.pix_code)
+          + '<div class="auto-check"><span class="loader" style="width:14px;height:14px"></span>Verificamos seu pagamento automaticamente.</div>';
+      } else {
+        html += '<button class="btn btn-green" id="step-pay" style="margin-top:24px;min-height:68px;padding:0 16px" type="button">'
+          + esc(data.button || 'Pagar') + '</button>';
+      }
+
+      if (data.demo) {
+        html += '<div class="demo-box"><p class="tag">Modo de teste</p>'
+          + '<button class="btn btn-ink" id="step-demo" type="button">Simular pagamento aprovado</button></div>';
+      }
+
+      html += '<div id="step-error"></div>';
+      body.innerHTML = html;
+
+      var payButton = document.getElementById('step-pay');
+      if (payButton) payButton.addEventListener('click', function () { pay(payButton); });
+
+      var demoButton = document.getElementById('step-demo');
+      if (demoButton) demoButton.addEventListener('click', function () {
+        callFn('funnelDemoApprove', { token: token, step: step }).then(function (result) {
+          if (result.redirect) go(result.redirect, token);
+        }).catch(function (error) {
+          document.getElementById('step-error').innerHTML = errorLine(error.message || 'Não foi possível simular.');
         });
-        </script><script type="module">
-        try {
-            const { createHotContext } = await import("/@vite/client");
-            const hot = createHotContext("/__builder-bridge-hmr");
-            const previewFEVersion = Number(new URLSearchParams(window.location.search).get("previewFE_version")) || 0;
-        
-            let wsOpenedAt = 0;
-            hot.on("vite:ws:connect", () => {
-                wsOpenedAt = Date.now();
-                window.parent.postMessage({ type: "SANDBOX_WS_CONNECT" }, "*");
-            });
-            hot.on("vite:ws:disconnect", () => {
-                let sw = null;
-                try { sw = navigator.serviceWorker; } catch (e) {}  // SecurityError where storage is denied
-                const staleClient = Date.now() - wsOpenedAt < 1000 && !!(sw && sw.controller);
-                window.parent.postMessage({ type: "SANDBOX_WS_DISCONNECT", payload: { stale_client: staleClient } }, "*");
-                if (!staleClient) return;
-                // Vite awaits this before it reloads, so the reload fetches fresh modules.
-                return Promise.race([
-                    Promise.all([
-                        sw.getRegistrations().then((regs) => Promise.all(regs.map((reg) => reg.unregister()))),
-                        caches.keys().then((keys) => Promise.all(keys.map((key) => caches.delete(key)))),
-                    ]),
-                    new Promise((resolve) => setTimeout(resolve, 2000)),
-                ]).catch(() => {});
-            });
-    
-            hot.on("vite:error", (payload) => {
-                const err = payload && payload.err && typeof payload.err === "object" ? payload.err : {};
-                const message = typeof err.message === "string" ? err.message : "Unknown build error";
-                const plugin = typeof err.plugin === "string" ? `[plugin:${err.plugin}] ` : "";
-                const details = [`Vite build error: ${plugin}${message}`];
-                const loc = err.loc && typeof err.loc === "object" ? err.loc : null;
-                let file = loc && typeof loc.file === "string"
-                    ? loc.file
-                    : (typeof err.id === "string" ? err.id : "");
-                if (file) {
-                    file = file.split("?")[0];
-                    if (loc && Number.isFinite(loc.line) && Number.isFinite(loc.column)) {
-                        file += `:${loc.line}:${loc.column}`;
-                    }
-                    details.push(`File: ${file}`);
-                }
-                if (typeof err.frame === "string" && err.frame.trim()) details.push(err.frame.trim());
-                if (typeof err.stack === "string" && err.stack.trim()) details.push(err.stack.trim());
+      });
 
-                const nativeBuffer = window.__base44_preview_native_failures;
-                if (!nativeBuffer || typeof nativeBuffer.append !== "function") return;
-                nativeBuffer.append(details.join(String.fromCharCode(10)));
-            });
-    
-            let hotUpdateStartedAt = 0;
-            hot.on("vite:beforeUpdate", () => { hotUpdateStartedAt = performance.now(); });
-            hot.on("vite:afterUpdate", () => {
-                const startedAt = hotUpdateStartedAt;
-                requestAnimationFrame(() => {
-                    window.parent.postMessage({ type: "SANDBOX_HOT_UPDATE_PAINTED", duration_ms: performance.now() - startedAt }, "*");
-                });
-            });
-    
-            // The pending promise holds Vite's pageReload (it awaits listeners) so the parent swaps a fresh iframe; an editor that doesn't announce previewFE_version falls back to today's in-place reload.
-            hot.on("vite:beforeFullReload", () => {
-                window.parent.postMessage({ type: "sandbox:beforeFullReload" }, "*");
-                if (previewFEVersion > 0) return new Promise(() => {});
-            });
-        } catch (e) {
-            window.parent.postMessage({ type: "SANDBOX_WS_ATTACH_FAILED", error: String(e) }, "*");
-        }
-        </script><script>
-        (function() {
-            var INTERVAL_MS = 30 * 60 * 1000;
-            var last = Date.now();
-            function renew() {
-                last = Date.now();
-                fetch("/base44-preview-session", {
-                    credentials: 'same-origin', cache: 'no-store', headers: {"x-base44-preview-keepalive": "1"}
-                }).then(function(r) {
-                    if ((r.status === 401 || r.status === 403) && window.self !== window.top) window.parent.postMessage({ type: 'preview:requestRefresh' }, '*');
-                }).catch(function() {});
-            }
-            setInterval(renew, INTERVAL_MS);
-            document.addEventListener('visibilitychange', function() {
-                if (document.visibilityState === 'visible' && Date.now() - last >= INTERVAL_MS) renew();
-            });
-        })();
-        </script><script>
-    (function() {
-        if (window.self === window.top) return;
-        var lastUrl = window.location.href;
-        function notify() {
-            var url = window.location.href;
-            if (url === lastUrl) return;
-            lastUrl = url;
-            window.parent.postMessage({ type: 'APP_CHANGED_URL', url: url }, '*');
-        }
-        var origPush = history.pushState.bind(history);
-        history.pushState = function() { origPush.apply(history, arguments); notify(); };
-        var origReplace = history.replaceState.bind(history);
-        history.replaceState = function() { origReplace.apply(history, arguments); notify(); };
-        window.addEventListener('popstate', notify);
-        window.parent.postMessage({ type: 'APP_CHANGED_URL', url: window.location.href }, '*');
-    })();
-    </script></head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx?t=1794907159873"></script>
-    <script src="/node_modules/@base44/vite-plugin/dist/injections/sandbox-mount-observer.js" type="module"></script>
-    <script type="module">if (window.self !== window.top) {
-  const mode = new URLSearchParams(location.search).get("sandbox-bridge");
-  const url = mode === "local"
-    ? "https://localhost:3201/index.mjs"
-    : "/node_modules/@base44/vite-plugin/dist/statics/index.mjs";
-  import(url)
-    .then(mod => {
-      if (typeof mod.setupVisualEditAgent === "function") mod.setupVisualEditAgent();
-    })
-    .catch(e => console.error("[visual-edit-agent] Failed to load:", e));
-}</script>
-  </body>
+      if (charge && !poll) {
+        poll = setInterval(function () {
+          callFn('funnelStatus', { token: token, step: step }).then(function (next) {
+            if (next.redirect) { clearInterval(poll); poll = null; go(next.redirect, token); }
+          }).catch(function () { /* segue tentando */ });
+        }, 6000);
+        timers.push(poll);
+      }
+    }
+
+    function pay(button) {
+      button.disabled = true;
+      button.innerHTML = '<span class="loader light"></span> Gerando PIX…';
+      callFn('funnelPay', { token: token, step: step }).then(function (charge) {
+        if (charge.redirect) { go(charge.redirect, token); return; }
+        if (!charge.pix_code) throw new Error('O gateway não retornou o código PIX. Tente novamente.');
+        state.charge = charge;
+        render();
+      }).catch(function (error) {
+        button.disabled = false;
+        button.textContent = (state.data && state.data.button) || 'Pagar';
+        document.getElementById('step-error').innerHTML = errorLine(error.message || 'Não foi possível gerar o PIX desta etapa.');
+      });
+    }
+
+    body.innerHTML = loadingHtml('Carregando…');
+    callFn('funnelStep', { token: token, step: step }).then(function (data) {
+      if (!active()) return;
+      if (data.redirect) { go(data.redirect, token); return; }
+      state.data = data;
+      state.charge = data.charge || null;
+      render();
+    }).catch(function (error) {
+      if (!active()) return;
+      body.innerHTML = '<div class="alert-card"><p>' + esc(error.message || 'Não foi possível abrir esta etapa.') + '</p>'
+        + '<button class="btn btn-ink" id="step-retry" style="margin-top:16px;height:44px;text-transform:none;letter-spacing:0" type="button">Tentar novamente</button></div>';
+      document.getElementById('step-retry').addEventListener('click', function () { runStep(step, token); });
+    });
+  }
+
+  /* ---------- LIBERADO ---------- */
+  var finalRun = 0;
+  function runFinal(tokenFromUrl) {
+    var token = tokenFromUrl || lsGet('gf:funnel') || '';
+    if (tokenFromUrl) lsSet('gf:funnel', token);
+    var body = document.getElementById('final-body');
+    var run = ++finalRun;
+
+    if (!token) {
+      body.innerHTML = '<div class="alert-card"><p>Acesso não identificado.</p>'
+        + '<a class="btn btn-ink" href="#/" style="margin-top:16px;height:44px;text-transform:none;letter-spacing:0">Voltar ao início</a></div>';
+      return;
+    }
+
+    body.innerHTML = loadingHtml('Liberando…');
+    callFn('funnelFinal', { token: token }).then(function (data) {
+      if (run !== finalRun) return;
+      if (data.redirect) { go(data.redirect, token); return; }
+      var links = (data.links || []).map(function (link) {
+        return '<a href="' + esc(link.url) + '" target="_blank" rel="noreferrer">' + esc(link.label) + '</a>';
+      }).join('');
+      body.innerHTML = '<div class="center"><div class="celebrate">🎉</div>'
+        + '<h1 class="page-title" style="margin-top:20px">PARABÉNS! Você acaba de garantir seu acesso aos nossos grupos!</h1>'
+        + '<p class="page-sub" style="margin-top:12px">Escolha o seu grupo para entrar:</p></div>'
+        + '<div class="final-links">' + links + '</div>';
+    }).catch(function (error) {
+      if (run !== finalRun) return;
+      body.innerHTML = '<div class="alert-card"><p>' + esc(error.message || 'Não foi possível validar o acesso.') + '</p></div>';
+    });
+  }
+
+  /* ---------- ROTAS ---------- */
+  function route() {
+    clearTimers();
+    var routeInfo = parseHash();
+    var path = routeInfo.path;
+    var params = routeInfo.params;
+
+    if (path === '/') {
+      showView('view-home');
+      onScroll();
+      return;
+    }
+
+    if (path === '/checkout') {
+      showView('view-checkout');
+      runCheckout(params.get('plano') || params.get('plan'), params.get('demo') === '1');
+      return;
+    }
+
+    if (path.indexOf('/pagamento/') === 0) {
+      funnelStarted = false;
+      showView('view-payment');
+      runPayment(decodeURIComponent(path.slice('/pagamento/'.length)), params.get('t'));
+      return;
+    }
+
+    if (path.indexOf('/taxa/') === 0) {
+      showView('view-step');
+      runStep(Number(path.split('/')[2] || 1), params.get('t'));
+      return;
+    }
+
+    if (path === '/liberado') {
+      showView('view-final');
+      runFinal(params.get('t'));
+      return;
+    }
+
+    window.location.hash = '#/';
+  }
+
+  window.addEventListener('hashchange', route);
+  route();
+
+  /* ---------- AÇÕES GLOBAIS ---------- */
+  document.addEventListener('click', function (event) {
+    var planButton = event.target.closest('[data-plan]');
+    if (planButton) {
+      go('/checkout?plano=' + encodeURIComponent(planButton.getAttribute('data-plan')));
+      return;
+    }
+
+    var copyButton = event.target.closest('[data-copy]');
+    if (copyButton) {
+      var value = copyButton.getAttribute('data-copy');
+      if (!value) return;
+      var label = copyButton.querySelector('span');
+      var original = label ? label.textContent : 'Copiar PIX';
+      var done = function () {
+        if (!label) return;
+        label.textContent = 'Código copiado';
+        setTimeout(function () { label.textContent = original; }, 2200);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(value).then(done, done);
+      } else {
+        var area = document.createElement('textarea');
+        area.value = value;
+        document.body.appendChild(area);
+        area.select();
+        try { document.execCommand('copy'); } catch (e) { /* ignora */ }
+        document.body.removeChild(area);
+        done();
+      }
+    }
+  });
+})();
+</script>
+</body>
 </html>
